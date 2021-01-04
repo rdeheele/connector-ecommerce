@@ -2,7 +2,7 @@
 # © 2013-2016 Camptocamp SA
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
-from odoo import models, fields, api
+from odoo import models, fields
 
 
 class SaleIgnoreCancel(models.TransientModel):
@@ -11,7 +11,6 @@ class SaleIgnoreCancel(models.TransientModel):
 
     reason = fields.Html(required=True)
 
-    @api.multi
     def confirm_ignore_cancel(self):
         self.ensure_one()
         sale_ids = self.env.context.get('active_ids')
