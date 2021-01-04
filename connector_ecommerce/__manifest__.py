@@ -11,7 +11,7 @@
  'license': 'AGPL-3',
  'depends': [
      'connector',
-     'sale_automatic_workflow_payment_mode',
+     'sale_automatic_workflow_payment',
      'sale_exception',
      'delivery',
      'connector_base_product',
